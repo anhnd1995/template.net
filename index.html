@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="solution.js"></script>
     <title>Template.net Challenge</title>
 </head>
 <body>
-    <div class="container">
-      
-            <label for="jewel"> Jewel Types:</label>
-            <input type="text" id="jewel" name="jewel"><br><br>
-            <label for="stone"> Stone Types:</label>
-            <input type="text" id="stone" name="stone"><br><br>
-            <button onclick="myFunction()">Click me</button>
-       
-        Number of jewels: <span id="count"></span>
+    <div class="background">
+        <div class="container">
+            <div class="content">
+            <label for="jewel"></label>
+            <input type="text" id="jewel" name="jewel" maxlength="50" placeholder="Jewel Types" required><br><br>
+            <p id="jewel-error"></p>
+            <label for="stone"></label>
+            <input type="text" id="stone" name="stone" maxlength="50" placeholder="Stone Types" required><br><br>
+            <p id="stone-error"></p> 
+            <button onclick="myFunction()">Count</button>
+        
+            <br><br> <p id="text--normal">Number of jewels: <span id="count"></span></p> 
+            </div>
+        </div>
     </div>
 </body>
 </html>
